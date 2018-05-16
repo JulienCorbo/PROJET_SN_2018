@@ -23,7 +23,7 @@ sudo apt update
 sudo apt upgrade
 ```
 
-* Ensuite l'instalation d'apache2 :
+* Ensuite l'installation d'apache2 :
 
 ```
 sudo apt install apache2
@@ -86,6 +86,10 @@ Le script sera executé toutes les heures.
 * Le quatrième X correspond aux mois de de 1 à 12
 * Le cinquième X correspond aux jours de la semaine de 0 à 6 en commençant par Dimanche
 
+### Schéma de cablage :
+
+[Schéma dans la doc de ce projet](https://github.com/JulienCorbo/PROJET_SN_2018/blob/master/Docs/Shéma_de_cablage.png)
+
 ## Déploiement
 
 Pour le déploiement de ce projet, une fois l'installation ci-dessus faite :
@@ -97,6 +101,10 @@ Pour le déploiement de ce projet, une fois l'installation ci-dessus faite :
 ## Ressources externes :
 
 * [GoogleChart](https://developers.google.com/chart/) - Utilisé pour les graphiques du site
+* [PHPMailer](https://github.com/PHPMailer/PHPMailer) - Utilisé pour l'envoi de mail lors d'un oubli de mot de passe
+* [jQuery](https://jquery.com) - Utilisé pour les requetes AJAX et le Javascript
+
+* [GitKraken](https://www.gitkraken.com) - Logiciel utilisé pour utiliser le dépot de travail du projet
 
 ## Auteurs
 
