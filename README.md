@@ -79,12 +79,12 @@ Le script sera executé toutes les heures.
 
 **Rappel :**
 
-X X X X X    commande à exécuter
-Le premier X correspond aux minutes de 0 à 59
-Le second X correspond aux heures de 0 à 23
-Le troisième X correspond aux jours de 1 à 31
-Le quatrième X correspond aux mois de de 1 à 12
-Le cinquième X correspond aux jours de la semaine de 0 à 6 en commençant par Dimanche
+**X X X X X    commande à exécuter**
+* Le premier X correspond aux minutes de 0 à 59
+* Le second X correspond aux heures de 0 à 23
+* Le troisième X correspond aux jours de 1 à 31
+* Le quatrième X correspond aux mois de de 1 à 12
+* Le cinquième X correspond aux jours de la semaine de 0 à 6 en commençant par Dimanche
 
 ## Déploiement
 
