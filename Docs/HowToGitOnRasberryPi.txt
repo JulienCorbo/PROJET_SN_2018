@@ -1,0 +1,13 @@
+cd /var/www/html/git/	// repertoire à manipuler
+git status				// Info sur le dossier local
+git fetch --all			// Comparaison différence local/dépot
+git checkout [nom de la branche cible]	// Changement de branche
+git pull				// dépot vers local
+git push				// local vers dépot
+
+
+Mise à jour vers la dernière version du site 
+>> cd /var/www/html/git/
+>> git checkout Stable
+>> git fetch --all
+>> git pull

@@ -1,0 +1,143 @@
+html,
+body {
+	height: 100%;
+}
+
+body {
+	color: #444;
+	font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, monospace;
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: flex;
+	-ms-flex-align: center;
+	-ms-flex-pack: center;
+	-webkit-box-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	justify-content: center;
+	background: #403f3f;
+}
+
+#error {
+	color:red;
+	font-size: 12px;
+}
+
+#wrap {
+
+}
+
+.form-connect {
+	width: 100%;
+	max-width: 330px;
+	padding: 15px;
+	margin: 0 auto;
+	background-color: #828282;
+}
+
+.form-connect .form-control {
+	position: relative;
+	box-sizing: border-box;
+	height: 100%;
+	padding: 10px;
+	font-size: 16px;
+}
+
+.user {
+	display: block;
+	width:70%;
+
+	margin: 0 auto;
+	padding:8px;
+
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #c5c5c5;
+
+	font-size:16px;
+}
+
+.password  {  
+	display: block;
+	width:70%;
+
+	margin: 0 auto 10px auto;
+	padding:8px;
+
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #c5c5c5;
+
+	font-size:16px;
+}
+
+.button {
+	padding:6px 0 6px 0;
+	font-family:Avantgarde, TeX Gyre Adventor, URW Gothic L, monospace;
+	font: bold;
+	color: white;
+	background:#01ADE1;
+	border-radius:5px;
+	width:70%;
+	border:1px solid #ccc;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 15px;
+}
+.button:hover{
+	background:#0080a7;
+}
+#switchDayNight{
+	margin:5px;
+}
+#switchDayNight #btnDay{
+	display: inline-block;
+	width:25px;
+	height:25px;
+	padding:6px 0;
+	border:1px solid;
+	border-radius:2px;
+
+	background:#01ADE1;
+	background: no-repeat center;
+	background-image: url("sun.png");
+	background-size: 20px 20px;
+
+	cursor:pointer;
+}
+
+#switchDayNight #btnNight {
+	display: inline-block;
+	width:25px;
+	height:25px;
+	padding:6px 0;
+	border:1px solid;
+	border-radius:2px;
+
+	background:#01ADE1;
+	background: no-repeat center;
+	background-image: url("moon.png");
+	background-size: 20px 20px;
+
+	cursor:pointer;
+}
+
+img.logo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h5 {
+	font-size: 12px;
+	margin:0;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+

@@ -1,0 +1,419 @@
+@import url(http://meyerweb.com/eric/tools/css/reset/reset.css);
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+[class*="fontawesome-"]:before {
+	font-family: 'FontAwesome', sans-serif;
+}
+*:focus{
+	outline: none !important;
+}
+body {
+	background-color: #d2d2d2;
+	color: #000;
+	font-family: "Varela Round", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 1.5em;
+	display: flex;
+}
+
+input {
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	line-height: inherit;
+}
+
+#connect,#main{
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	margin-top: 2%;
+}
+#connect{
+	width: 400px;
+}
+#main{
+	width: 900px;
+}
+#connect #header,#main #header{
+	background-color: #01ade1;
+	border-radius: 20px 20px 0 0;
+	padding: 10px 10px 0 10px;
+
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+}
+#main #header ul{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+#main #header li{
+	padding: 5px 20px;
+	color: white;
+}
+#main #header li a{
+	color: inherit;
+	text-decoration: none;
+	border: none;
+}
+
+#main #header li #settingBtn{
+	align-self: flex-end;
+}
+#main #header .active{
+	border-radius: 4px 4px 0 0;
+	background-color: white;
+	color: #01ade1;
+}
+#connect #header img, #main #header img{
+	width: 50px;
+	height: 50px;
+	margin-right: 10px; 
+	margin-bottom: 5px;
+}
+#connect #header h1{
+	align-self: flex-end;
+	margin-bottom: 5px;
+	font-size: 35px;
+	color: #fff;
+}
+#connect #content, #main #home,#main #statement, #main #correction, #main #setting{
+	background-color: #fff;
+	border-radius: 0 0 20px 20px;
+	padding: 10px 20px 20px 20px;
+	margin-bottom: 5px;
+}
+#main #home,#main #statement, #main #correction, #main #setting{
+	min-height: 0;
+	display: flex;
+	flex-direction: column;
+}
+#main #statement table tbody tr{
+	display: flex;
+}
+#main #statement table tbody tr th,#main #statement table tbody tr td{
+	flex: 1;
+	display: flex;
+	justify-content: center;
+}
+#main #statement table tbody tr th{
+	font-size: 20px;
+	padding-bottom: 5px;
+}
+#main #home .row{
+	flex-direction: row;
+	display: flex;
+	margin-bottom: 14px;
+}
+#main #home .row .col{
+	flex-direction: column;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex: 1;
+	padding: 14px;
+}
+#connect #content a{
+	font-size: 13px; 
+	color:#01ADE1; 
+	text-decoration-line: none;
+	margin-bottom: 14px;
+}
+#connect #content a:hover{
+	text-decoration-line: underline;
+}
+#connect #content h2,
+#connect #content form,
+#connect #content form label,
+#connect #content form input,
+#main #setting h2,
+#main #setting form,
+#main #setting form label,
+#main #setting form input{
+	display: flex;
+}
+#connect #content h2,
+#main #setting h2,
+#main #home h2{
+	font-size: 18px;
+	margin-bottom: 14px;
+}
+#connect #content form,
+#main #setting form{
+	flex-direction: column;
+}
+#main #setting form{
+	width: 50%;
+	align-self: center;
+}
+#connect #content form h3,
+#main #setting form h3{
+	color: #f95252;
+	font-size: 16px;
+}
+#connect #content form input,
+#main #setting form input{
+	background-color: #dedede;
+	padding: 4px 10px;
+	margin-bottom: 14px;
+	border-radius: 3px;
+}
+#connect #content form input[type="password"]{
+	margin-bottom: 0;
+}
+#connect #content form input[type="submit"],
+#main #setting form input[type="submit"]{
+	align-self: center;
+	background-color: #01ade1;
+	color: #fff;
+	margin-bottom: 0;
+}
+#main #setting form input[type="submit"]{
+	margin-bottom: 10px;
+}
+#connect #content form input[type="submit"]:hover,
+#main #setting form input[type="submit"]:hover{
+	cursor: pointer;
+}
+#connect h5,#main h5{
+	font-size: 10px;
+	align-self: flex-end;
+	margin: 0;
+	line-height: 1.3em;
+}
+#infobox{
+	visibility: hidden;
+	font-size: 20px;
+	min-width: 250px;
+	background-color: #fff;
+	text-align: center; 
+	border-radius: 3px;
+	padding: 4px 10px;
+/*	position: fixed;
+	z-index: 2;
+	bottom: 3%;
+*/	align-self: center;
+}
+#infobox.show{
+	visibility: visible;
+}
+
+/*h1{
+	font-weight: lighter;
+	margin: 0 auto;
+	font-size: 25px;
+}
+h2{
+	font-weight: normal;
+	margin: 0;
+	font-size: 16px;
+	
+}
+h2.retrieve{
+	text-align: justify;
+	width: 80%;
+}
+img.logo {
+	display: block;
+	margin: 0 auto;
+	}*/
+/*#content {
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 10px;
+	top: 40px;
+	position: relative;
+	box-sizing: border-box;
+	font-size: 16px;
+	background-color: #FFFFFF;
+	}*/
+/*
+#tabs {
+	width: 100%;
+}
+#tabs ul {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+}
+#tabs ul li {
+	margin: 0;
+	background:#01ADE1;
+	border-radius:5px 5px 0 0;
+	border:1px solid #ccc;
+}
+#tabs ul li a {
+	font-family:Avantgarde, TeX Gyre Adventor, URW Gothic L, monospace;
+	text-decoration: none;
+	color: white;
+	font-size: 17px;
+	display: flex;
+	padding: 10px;
+	outline: none;
+}
+#tabs ul li img{
+	height: 23px;
+}
+#tabs ul li:hover {
+	background: #0080a7;
+}
+#settingBtn{
+	background:grey !important;
+}
+#settingBtn:hover{
+	background: #656565 !important;
+}
+
+#home,#setting,#correction{
+	background: white;
+	padding: 5px;
+}
+#changePass{
+	width: 75%;
+	margin: 0 auto;
+}
+
+.form-connect {
+	max-width: 330px !important;
+}
+form{
+	margin: 0;
+}
+.password, .user{
+	display: block;
+	width:70%;
+	margin: 0 auto;
+	padding:8px;
+
+	border-width: 1px;
+	border-style: solid;
+	border-color: #c5c5c5;
+
+	font-size:14px;
+}
+.topBorder{
+	margin-top: 10px !important;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+}
+.botBorder{
+	margin-bottom: 10px !important;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+.formButton {
+	font-size: 14px;
+	font-family:Avantgarde, TeX Gyre Adventor, URW Gothic L, monospace;
+	font-weight: bold;
+	color: white;
+
+	background:#01ADE1;
+	border-radius:5px;
+	border:1px solid #ccc;
+	outline: none;
+
+	display: block;
+
+	width:100%;
+	padding:6px 10px;
+	margin: 10px auto;
+	cursor:pointer;
+}
+.formButton:hover{
+	background:#0080a7;
+}
+
+.link{ 
+	font-size: 13px; 
+	color:#01ADE1; 
+	text-decoration-line: none;
+}
+.link:hover{
+	text-decoration-line: underline; 
+}
+
+#error {
+	color:red;
+	font-size: 12px;
+}
+
+h5 {
+	font-weight: normal;
+	font-size: 12px;
+	display: block;
+	margin:0 auto;
+	margin-top: 15px;
+}
+
+#infoBox{
+	visibility: hidden;
+	font-size: 16px;
+	min-width: 250px;
+	background-color: #E6E6E6;
+	color: black;
+	text-align: center; 
+	border-radius: 2px;
+	padding: 16px;
+	position: fixed;
+	z-index: 2;
+	bottom: 1%;
+	left: 1%;
+}
+#infoBox.show{
+	visibility: visible;
+}
+
+.paramRow{
+	display: flex;
+	flex-direction: row;
+	flex: 1;
+}
+.paramCol{
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+/*	#switchDayNight{
+		margin:5px;
+	}
+	#switchDayNight #btnDay{
+		display: inline-block;
+		width:25px;
+		height:25px;
+		padding:6px 0;
+		border:1px solid;
+		border-radius:2px;
+
+		background:#01ADE1;
+		background: no-repeat center;
+		background-image: url("sun.png");
+		background-size: 20px 20px;
+
+		cursor:pointer;
+	}
+
+	#switchDayNight #btnNight {
+		display: inline-block;
+		width:25px;
+		height:25px;
+		padding:6px 0;
+		border:1px solid;
+		border-radius:2px;
+
+		background:#01ADE1;
+		background: no-repeat center;
+		background-image: url("moon.png");
+		background-size: 20px 20px;
+
+		cursor:pointer;
+	}*/
