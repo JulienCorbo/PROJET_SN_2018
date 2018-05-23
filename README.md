@@ -23,7 +23,7 @@ sudo apt update
 sudo apt upgrade
 ```
 
-* Ensuite l'installation d'apache2 :
+* **Ensuite l'installation d'apache2 :**
 
 ```
 sudo apt install apache2
@@ -34,7 +34,7 @@ sudo chown -R pi:www-data /var/www/html/
 sudo chmod -R 770 /var/www/html/
 ```
 
-* L'installation de PHP : 
+* **L'installation de PHP :** 
 ```
 sudo apt install php php-mbstring
 
@@ -48,19 +48,19 @@ sudo rm /var/www/html/index.html
 echo "<?php phpinfo(); ?>" > /var/www/html/index.php
 ```
 
-* L'installation de MySQL : 
+* **L'installation de MySQL :** 
 ```
 sudo apt install mysql-server php-mysql
 ```
 
-* L'installation de PHPMyAdmin : 
+* **L'installation de PHPMyAdmin :** 
 ```
 sudo apt install phpmyadmin
 ```
 
 Pour tester si phpMyAdmin fonctionne il suffit d'aller sur son navigateur et de taper « http://localhost/phpmyadmin ».
 
-* Installation de la base de donnée :
+* **Installation de la base de donnée :**
 
 Maintenant que phpMyAdmin est installé, il ne reste plus qu'a créer la base de donnée et les tables.
 
