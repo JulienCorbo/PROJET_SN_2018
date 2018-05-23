@@ -106,8 +106,8 @@ Pour le déploiement de ce projet, une fois l'installation ci-dessus faite :
 * [GoogleChart](https://developers.google.com/chart/) - Utilisé pour les graphiques du site
 * [PHPMailer](https://github.com/PHPMailer/PHPMailer) - Utilisé pour l'envoi de mail lors d'un oubli de mot de passe
 * [jQuery](https://jquery.com) - Utilisé pour les requetes AJAX et le Javascript
-
 * [GitKraken](https://www.gitkraken.com) - Logiciel utilisé pour utiliser le dépot de travail du projet
+* [Différentes librairies python](https://github.com/JulienCorbo/PROJET_SN_2018/tree/master/Script) - Utilisé pour faire fonctionner le script python (voir plus haut)
 
 ## Auteurs
 
