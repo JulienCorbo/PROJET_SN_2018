@@ -88,7 +88,7 @@ sudo crontab -e
 Puis y rajouter : 
 
 ```
-0 */1 * * * * python /home/pi/var/www/html/nom_du_script_python.py
+0 */1 * * * * python /home/pi/var/www/html/scriptp3k.py
 ```
 
 [Lien vers le script](https://github.com/JulienCorbo/PROJET_SN_2018/blob/master/Script/scriptp3k.py)
