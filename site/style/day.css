@@ -91,6 +91,9 @@ input {
 	display: flex;
 	flex-direction: column;
 }
+#main #statement table{
+	width: 100%;
+}
 #main #statement table tbody tr{
 	display: flex;
 }

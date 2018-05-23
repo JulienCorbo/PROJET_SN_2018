@@ -189,11 +189,23 @@ function retrievePass(){
 					console.log("DATA_"+selectedData+": "+json);
 					var data = new google.visualization.DataTable(json);
 					if (selectedData!='table') {
+						switch(selectedData){
+							case 'temp':
+							var base=20;
+							break;
+							case 'ph':
+							var base=7.3;
+							break;
+							case 'cl':
+							var base=1.3;
+							break;
+						}
 						var options = 
 						{
 							baselineColor:'none',
+							vAxis:{baseline:base},
 							height:140,
-							chartArea: {'width': '85%', 'height': '85%'},
+							chartArea: {'width': '85%', 'height': '80%'},
 							pointSize:3,
 							fontName:'Varela Round',
 							legend:{position:'none'}

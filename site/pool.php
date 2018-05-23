@@ -54,7 +54,7 @@
 					$french_months = array('Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre');
 					while($dataRow=mysqli_fetch_array($bddData))
 					{
-						$date=date("j F Y \à H:m:s",$dataRow['datetime']);
+						$date=date("j F Y \à H:i:s",$dataRow['datetime']);
 						$date=str_replace($english_months, $french_months, $date);
 						echo '<tr><td>'.$date.'</td><td>'.$dataRow['temp'].'</td><td>'.$dataRow['ph'].'</td><td>'.$dataRow['cl'].'</td></tr>';
 					}
