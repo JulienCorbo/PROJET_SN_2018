@@ -73,6 +73,8 @@ Il faudra aussi changer le mot de passe de l'utilisateur "*root*" avec le nom d'
 - Cliquez sur "*Editer les privileges*" de l'utilisateur "*root*" avec le nom d'hote "*localhost*".
 - Renseignez le mot de passe "*raspberry*"
 
+**Rappel : Les identifiants disponible sont renseignés dans le script "*setupBDD.sql*"** 
+
 ### Script de récupération des informations
 
 Les valeurs sont récupérées par la Raspberry Pi en i2C grâce à un script en python qui est exécuté grâce au crontab de la carte.
