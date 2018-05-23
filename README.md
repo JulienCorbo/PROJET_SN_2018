@@ -60,6 +60,19 @@ sudo apt install phpmyadmin
 
 Pour tester si phpMyAdmin fonctionne il suffit d'aller sur son navigateur et de taper « http://localhost/phpmyadmin ».
 
+* Installation de la base de donnée :
+
+Maintenant que phpMyAdmin est installé, il ne reste plus qu'a créer la base de donnée et les tables.
+
+Pour cela, depuis la page d'accueil de phpMyAdmin, il faut se rendre dans l'onglet "*importer*", puis ajouter le script "*setupBDD.sql*" 
+[Script disponible ici](https://github.com/JulienCorbo/PROJET_SN_2018/blob/master/Script/setupBDD.sql)
+
+Il faudra aussi changer le mot de passe de l'utilisateur "*root*" avec le nom d'hote "*localhost*" comme suit :
+
+- Rendez vous sur l’onglet "*Comptes Utilisateurs*"  de phpMyAdmin.
+- Cliquez sur "*Editer les privileges*" de l'utilisateur "*root*" avec le nom d'hote "*localhost*".
+- Renseignez le mot de passe "*raspberry*"
+
 ### Script de récupération des informations
 
 Les valeurs sont récupérées par la Raspberry Pi en i2C grâce à un script en python qui est exécuté grâce au crontab de la carte.
